@@ -16,7 +16,7 @@ export default function LangSwitcher({ locale }: { locale: string }) {
   };
   return (
     <select value={language} onChange={handleChangeLang}>
-      <option value="fa">Fa</option>
+      <option value="fa">فا</option>
       <option value="en">En</option>
     </select>
   );

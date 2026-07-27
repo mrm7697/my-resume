@@ -1,0 +1,9 @@
+import LoadingProgress from '@/components/ui/loading-progress';
+
+export default function Loading() {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+      <LoadingProgress />
+    </div>
+  );
+}
