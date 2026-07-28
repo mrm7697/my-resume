@@ -760,7 +760,7 @@ menu[role='tablist'].justified button {
   border-right: none;
 }
 button {
-  font-family: 'Pixelated MS Sans Serif', Arial;
+  /* font-family: 'Pixelated MS Sans Serif', Arial; */
   -webkit-font-smoothing: antialiased;
   font-size: 11px;
   box-sizing: border-box;
@@ -1354,11 +1354,9 @@ progress:not([value])::-moz-progress-bar:not([value]) {
 }
 
 .start-menu {
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: sticky;
   bottom: 0;
-  z-index: 60;
+  z-index: 20;
   height: 31px;
   display: flex;
   align-items: center;
@@ -1472,10 +1470,6 @@ progress:not([value])::-moz-progress-bar:not([value]) {
 .menu-item:hover {
   color: white;
   background: linear-gradient(to bottom, #4d8cf8, #2d6cdf);
-}
-
-.start-menu {
-  z-index: 20;
 }
 
 .start-menu-panel {

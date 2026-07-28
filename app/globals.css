@@ -207,6 +207,10 @@ progress {
   margin-top: auto;
 }
 
+.button-link {
+  @apply flex items-center gap-2 py-2! px-2.5! w-full justify-center;
+}
+
 .contact-link:hover,
 .action-link:hover {
   background: #d9e8ff;
@@ -280,15 +284,28 @@ progress {
   background: #f7f7f7;
 }
 
+.gallery-main-button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
 .gallery-controls {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  width: 150px;
+  margin: 8px;
+  margin-inline: auto;
 }
 
 .gallery-controls button {
   min-width: 32px;
   padding: 4px 8px;
+  width: 70px;
 }
 
 .thumbnails {
@@ -312,6 +329,65 @@ progress {
   width: 100%;
   height: 72px;
   object-fit: cover;
+}
+
+.image-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.image-modal-window {
+  width: min(92vw, 1100px);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: #c0c0c0;
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+  border-radius:8px;
+}
+
+.image-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.image-modal-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.image-modal-toolbar button {
+  min-width: 32px;
+  padding: 4px 8px;
+}
+
+.image-modal-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  overflow: auto;
+  background: #f7f7f7;
+  border: 1px solid #808080;
+  padding: 12px;
+}
+
+.image-modal-image {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
 }
 
 @media (max-width: 900px) {
