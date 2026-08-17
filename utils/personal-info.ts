@@ -23,13 +23,13 @@ export const getPersonalInfo = (t: _Translator<Record<string, any>, never>) => {
         name: t('css'),
         level: 90,
       },
-      { name: t('javascript'), level: 80 },
+      { name: t('javascript'), level: 85 },
       {
         name: t('react'),
-        level: 70,
+        level: 85,
       },
-      { name: t('nextjs'), level: 70 },
-      { name: t('typescript'), level: 50 },
+      { name: t('nextjs'), level: 85 },
+      { name: t('typescript'), level: 60 },
       { name: t('vuejs'), level: 50 },
     ],
     socialMedia: {
