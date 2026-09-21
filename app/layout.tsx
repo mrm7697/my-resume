@@ -7,6 +7,7 @@ import i18n from '@/i18n/config';
 import StartMenu from '@/components/layout/start-menu';
 import InitLoading from '@/components/layout/init-loading';
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'محمدرضا متین',
@@ -50,6 +51,7 @@ export default async function RootLayout({
             <StartMenu theme={theme || 'xp'} locale={locale} />
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
