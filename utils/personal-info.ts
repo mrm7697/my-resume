@@ -36,6 +36,7 @@ export const getPersonalInfo = (t: _Translator<Record<string, any>, never>) => {
       telegram: 'https://t.me/mrm7697',
       instagram: 'https://www.instagram.com/farshid.matin',
       github: 'https://github.com/mrm7697',
+      linkedin: 'https://linkedin.com/in/mrm7697',
     },
     WorkHistory: [
       {

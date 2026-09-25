@@ -57,6 +57,25 @@ export default function Home() {
                 <h2>{t('aboutMe')}</h2>
                 <p>{t('summary')}</p>
               </div>
+              <a
+                href="/resume/Mohammadreza_matin_resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="button-link">
+                  <span className="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 2v10m0 0 3-3m-3 3-3-3M21 21H3"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  {t('viewResume')}
+                </button>
+              </a>
             </div>
           </section>
 
@@ -202,6 +221,20 @@ export default function Home() {
                         </svg>
                       </span>
                       GitHub
+                    </button>
+                  </a>
+                  <a
+                    href={info.socialMedia.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="button-link">
+                      <span className="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.2c.7-1.3 2.4-2.2 4-2.2 4.3 0 5 2.8 5 6.4V24h-5v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24H7.5V8z" />
+                        </svg>
+                      </span>
+                      LinkedIn
                     </button>
                   </a>
                 </div>
